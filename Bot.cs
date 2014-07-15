@@ -325,14 +325,7 @@ namespace TFBot
         }
         public void AwayMode(SteamID id, EChatEntryType type, String message)
         {
-            if(id == Admins.Find(x => x.AccountID == 55131436))
-            {
-                SteamFriends.SendChatMessage(id, type, "Hey Honey..I'm not here right now, Leave a message if you'd like! I love reading them.");
-            }
-            else
-            {
-                SteamFriends.SendChatMessage(id, type, "PROTOBOT DEV RESPONSE");
-            }
+            SteamFriends.SendChatMessage(id, type, "PROTOBOT: Not here at the moment");
         }
         #endregion
     }
